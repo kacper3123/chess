@@ -1,6 +1,4 @@
 from flask import Flask
-from flask_session import Session
-from flask_socketio import SocketIO
 from app import Config
 
 def create_app():
@@ -11,8 +9,6 @@ def create_app():
     app.config['SECRET_KEY'] = 'key'
     app.secret_key = 'key'
     app.debug = True
-    session = Session()
-    session.init_app(app)
 
     from app import routes, models, events
     return app
