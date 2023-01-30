@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block title %}
+Login
+{% endblock %}
+
+{% block content %}
+
+<div class="row d-flex justify-content-center" style="padding-top: 10%;">
+  <h1 style="text-align: center; padding-bottom: 1%;">Sign In</h1>
+  <form action="" method="post" novalidate class="col-md-8 col-lg-6 col-xl-4 ">
+    {{ form.hidden_tag() }}
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      {{ form.username(size=32, class="form-control") }}<br>
+      <label class="form-label" for="form2Example1">Email or Username</label>
+    </div>
+    {% for error in form.username.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+
+
+
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      {{ form.password(size=32, class="form-control") }}
+      <label class="form-label" for="form2Example2">Password</label>
+    </div>
+    {% for error in form.password.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <!-- Checkbox -->
+        <div class="form-check">
+          {{ form.remember_me(class="form-check-input") }}
+          <label class="form-check-label" for="form2Example31"> Remember me </label>
+        </div>
+      </div>
+
+      <div class="col">
+        <!-- Simple link -->
+        <a href="#!">Forgot password?</a>
+      </div>
+    </div>
+
+    <!-- Submit button -->
+    {{ form.submit(class="btn btn-primary btn-block mb-4") }}
+
+    <!-- Register buttons -->
+    <div class="text-center">
+      <p>Not a member? <a href='{{ url_for("register")}}''>Register</a></p>
+      <p>or sign up with:</p>
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+  
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-google"></i>
+      </button>
+  
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-twitter"></i>
+      </button>
+  
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-github"></i>
+      </button>
+    </div>
+  </form>
+</div>
+{% endblock %}

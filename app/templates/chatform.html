@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}
+Chat Room Choice
+{% endblock %}
+
+{% block content %}
+<div class="row d-flex justify-content-center" style="padding-top: 10%;">
+  <h1 style="text-align: center; padding-bottom: 1%;">Choose Room</h1>
+  <form action="" method="post" novalidate class="col-md-8 col-lg-6 col-xl-4 ">
+    {{ form.hidden_tag() }}
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      {{ form.room(size=32, class="form-control") }}<br>
+      <label class="form-label" for="form2Example1">Room</label>
+    </div>
+    {% for error in form.room.errors %}
+    <span style="color: red;">[{{ error }}]</span>
+    {% endfor %}
+    <!-- Submit button -->
+    {{ form.submit(class="btn btn-primary btn-block mb-4") }}
+  </form>
+</div>
+{% endblock %}
