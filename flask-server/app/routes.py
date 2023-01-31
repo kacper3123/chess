@@ -3,6 +3,7 @@ from app import app, db
 
 
 
-@app.route('/')
+@app.route('/members')
 def index():
-    return render_template('chess.html')
+    # return render_template('chess.html')
+    return {"members": ["kacpi", "kacpi2", "kacpi3"]}
