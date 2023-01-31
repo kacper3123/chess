@@ -1,24 +1,158 @@
 body {
-    margin: 0px;
+    background-color: #312e2b;
+    color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
     padding: 0px;
+    margin: 0px;
 }
 
 #container {
-    width: 100%;
-    height: 100%;
-    background-color: #312e2b;
+    width: 100vw;
+    height: 100vh;
     color: whitesmoke;
-    position: relative;
+    margin: inherit;
+    padding: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #chessBoard {
-    height: 950px;
-    width: 950px;
+    height: 35vw;
+    width: 35vw;
     position: absolute;
-    top: 50%;
-    left: 30%;
 
     background-image: url("/static/img/150.png");
     background-repeat: no-repeat;
     background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.wp {
+    background-image: url("/static/img/wp.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.wr {
+    background-image: url("/static/img/wr.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.wb {
+    background-image: url("/static/img/wb.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.wn {
+    background-image: url("/static/img/wn.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.wk {
+    background-image: url("/static/img/wk.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.wq {
+    background-image: url("/static/img/wq.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.bp {
+    background-image: url("/static/img/bp.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.br {
+    background-image: url("/static/img/br.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.bb {
+    background-image: url("/static/img/bb.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.bn {
+    background-image: url("/static/img/bn.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.bk {
+    background-image: url("/static/img/bk.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.bq {
+    background-image: url("/static/img/bq.png");
+    width: 4.375vw;
+    height: 4.375vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: inherit;
+    padding: inherit;
+}
+
+.square {
+    width: 4.375vw;
+    height: 4.375vw;
+    padding: inherit;
+    margin: inherit;
 }
