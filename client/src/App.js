@@ -1,8 +1,12 @@
-// import React, {useState, useEffect} from 'react'
+import React from 'react'
+import Board from "./components/Board.js"
+import "./styles/Main.css"
 
 function App() {
   
-  return (<div class="br"></div>)
+  return (
+    <Board />
+  )
 }
 
 export default App
