@@ -23,7 +23,7 @@ body {
     width: 35vw;
     position: absolute;
 
-    background-image: url("/static/img/150.png");
+    background-image: url("../assets/img/150.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: inherit;
@@ -31,7 +31,7 @@ body {
 }
 
 .wp {
-    background-image: url("/static/img/wp.png");
+    background-image: url("../assets/img/wp.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -41,7 +41,7 @@ body {
 }
 
 .wr {
-    background-image: url("/static/img/wr.png");
+    background-image: url("../assets/img/wr.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -51,7 +51,7 @@ body {
 }
 
 .wb {
-    background-image: url("/static/img/wb.png");
+    background-image: url("../assets/img/wb.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -61,7 +61,7 @@ body {
 }
 
 .wn {
-    background-image: url("/static/img/wn.png");
+    background-image: url("../assets/img/wn.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -71,7 +71,7 @@ body {
 }
 
 .wk {
-    background-image: url("/static/img/wk.png");
+    background-image: url("../assets/img/wk.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -81,7 +81,7 @@ body {
 }
 
 .wq {
-    background-image: url("/static/img/wq.png");
+    background-image: url("../assets/img/wq.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -91,7 +91,7 @@ body {
 }
 
 .bp {
-    background-image: url("/static/img/bp.png");
+    background-image: url("../assets/img/bp.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ body {
 }
 
 .br {
-    background-image: url("/static/img/br.png");
+    background-image: url("../assets/img/br.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -111,7 +111,7 @@ body {
 }
 
 .bb {
-    background-image: url("/static/img/bb.png");
+    background-image: url("../assets/img/bb.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ body {
 }
 
 .bn {
-    background-image: url("/static/img/bn.png");
+    background-image: url("../assets/img/bn.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -131,7 +131,7 @@ body {
 }
 
 .bk {
-    background-image: url("/static/img/bk.png");
+    background-image: url("../assets/img/bk.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -141,7 +141,7 @@ body {
 }
 
 .bq {
-    background-image: url("/static/img/bq.png");
+    background-image: url("../assets/img/bq.png");
     width: 4.375vw;
     height: 4.375vw;
     background-repeat: no-repeat;
@@ -155,4 +155,16 @@ body {
     height: 4.375vw;
     padding: inherit;
     margin: inherit;
+    float: left;
+    z-index: 1;
+
+}
+
+/* .square:hover {
+    background-color: red;
+} */
+
+.square > div:hover {
+    cursor: pointer;
+    z-index: 2;
 }
