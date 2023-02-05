@@ -10,5 +10,5 @@ from app import models, routes, events
 if __name__ == "__main__":
     socketio = SocketIO(app)
     socketio.init_app(app, cors_allowed_origins=['http://127.0.0.1:5000', 'http://localhost:5000'])
-    socketio.run(app, host="http://127.0.0.1:5000", debug=True)
+    socketio.run(app, host="http://127.0.0.1:5000", debug=True, threaded=True)
     patch_all()
