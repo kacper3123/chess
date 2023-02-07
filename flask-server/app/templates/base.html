@@ -32,7 +32,6 @@
     {% block content %}
     {% endblock %}
 
-
 </body>
 
 </html>
@@ -47,6 +46,7 @@
     var $fen = $('#fen')
     var $pgn = $('#pgn')
   
+
     function onDragStart (source, piece, position, orientation) {
       // do not pick up pieces if the game is over
       if (game.game_over()) return false
@@ -121,4 +121,10 @@
     board = Chessboard('chess_board', config)
   
     updateStatus()
+
+
+  function reset() {
+    board.position('rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1')
+    game.reset()
+  }
   </script>
