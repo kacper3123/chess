@@ -1,1 +1,1 @@
-# flask-chat
+# flask-chess
