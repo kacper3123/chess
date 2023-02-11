@@ -10,5 +10,5 @@ def create_app():
     app.secret_key = 'key'
     app.debug = True
 
-    from app import routes, models, events
+    from app import routes
     return app
